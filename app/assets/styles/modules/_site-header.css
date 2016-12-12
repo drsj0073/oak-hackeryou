@@ -1,0 +1,20 @@
+.site-header {
+
+	&__menu-container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	.hamburger-icon {
+		padding-left: 10px;
+
+	}
+
+	p {
+		margin: 0;
+		text-transform: uppercase;
+		align-content: center;
+	}
+
+}

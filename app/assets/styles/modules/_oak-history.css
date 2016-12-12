@@ -1,0 +1,28 @@
+.oak-history {
+	display: flex;
+
+	&__content {
+		display: flex;
+	}
+
+	&__text-container {
+		 max-width: 550px;
+		 /*width: 100%;*/
+		 margin-right: 150px;
+		 margin-top: 70px;
+	}
+
+	h3 {
+		font-size: 1.1rem;
+		line-height: 1.5;
+		font-weight: 400;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+	}
+
+	p {
+		line-height: 1.5;
+		margin: 0;
+	}
+
+}

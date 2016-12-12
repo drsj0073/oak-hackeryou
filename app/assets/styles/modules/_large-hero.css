@@ -1,0 +1,36 @@
+.large-hero {
+	position: relative;
+
+	&__text-content {
+		position: absolute;
+		top: 45%;
+		left: 6%;
+	}
+
+	&__title {
+	font-family: "raleway", sans-serif;
+	text-transform: uppercase;
+	font-size: 3rem;
+	letter-spacing: 8px;
+	}
+
+		span {
+			font-weight: 300;
+			background-color: $mainGreen;
+			padding: 10px 20px;
+		}
+
+	&__subtitle {
+		font-family: "Raleway", sans-serif;
+		text-transform: uppercase;
+		font-size: 1.9rem;
+		font-weight: 300;
+		margin-top: 40px;
+	}	
+
+	img {
+		display: block;
+	}
+
+
+}

@@ -1,0 +1,51 @@
+.our-work {
+
+	ul {
+		display: flex;
+		margin: 0 0 40px 0;
+		padding: 0;
+		align-items: center ;
+	}
+
+	li {
+		margin-right: 35px;
+	}
+	a {
+		color: #555;
+
+		&:hover {
+			color: $mainGreen;
+		}
+	}
+
+	&__hamburger-icon {
+		padding: 15px 10px;
+		background-color: $mainGreen;
+		margin-right: 35px;
+	}
+}
+
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.gallery--overlay {
+
+}
+
+.gallery__image {
+		margin-bottom: 30px;
+		color: $mainGreen;
+	}
+
+.gallery__image:nth-last-child(-n+3) {
+	margin-bottom: 0;
+}	
+
+.gallery__image:hover {
+		border: 3px solid #000;
+		color: $mainGreen;
+		z-index: 2;
+	}
