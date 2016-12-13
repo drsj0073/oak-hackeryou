@@ -6,6 +6,11 @@
 		align-items: center;
 	}
 
+	&__menu-container:hover {
+		background-color: $mainGreen;
+		cursor: pointer;
+	}
+
 	.hamburger-icon {
 		padding-left: 10px;
 

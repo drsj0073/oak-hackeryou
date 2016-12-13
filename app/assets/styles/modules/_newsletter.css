@@ -1,5 +1,5 @@
 .newsletter {
-
+	
 	&__content {
 		display: flex;
 		align-items: center;
@@ -13,30 +13,57 @@
 	}
 
 	&__image {
+		display: flex;
+		justify-content: column;
 		height: 325px;
-		width: 50%;
+		width: 100%;
+		opacity: .5;
+		
+		@mixin atLarge {
+			width: 50%;
+			opacity: 1;
+		}
 	}
 
 	&__form {
 		background-color: #fff;
-		padding: 50px 55px;
-		width: 75%;
+		padding: 20px 25px;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		margin: 0 auto;
+
+		@mixin atLarge {
+			width: 75%;
+			padding: 50px 55px;
+			margin: 0;
+		}
 	}
 }
 
 input[type="email"],
 input[type="submit"] {
 	display: block;
-	margin: 10px 60px; 
+	margin: 10px 10px;
+
+	@mixin atLarge {
+		margin: 10px 60px;
+	} 
 }
 
 input[type="email"] {
-	padding: 15px 220px 15px 15px;
 	margin-bottom: 25px;
+	padding: 10px 25px 10px 10px;
 	text-transform: uppercase;
+
+	@mixin atSmall {
+		padding: 10px 110px 10px 10px;
+	}
+
+	@mixin atLarge {
+		padding: 15px 220px 15px 15px;
+	}
 }
 
 input[type="submit"] {
@@ -45,10 +72,19 @@ input[type="submit"] {
 	color: #fff;
 	padding: 15px 25px;
 	text-transform: uppercase;
+	font-size: 1rem;
 	font-weight: 600;
-	font-size: 1.5rem;
 	letter-spacing: 4px;
 	margin: 0;
+	cursor: pointer;
+
+	@mixin atLarge {
+		font-size: 1.5rem;
+	}
+}
+
+input[type="submit"]:hover {
+	background-color: #30e4a7;
 }
 
 .newsletter__content {
@@ -57,9 +93,20 @@ input[type="submit"] {
 
 .newsletter__subscribe {
 		position: absolute;
-		left: 640px;
+		left: 5%;
 		top: 50%;
 		transform: translateY(-50%);
-		/*left: 0;*/
 		z-index: 200;
+
+		@mixin atSmall {
+			left: 200px;
+		}
+
+		@mixin atMedium {
+			left: 500px;
+		}
+
+		@mixin atLarge {
+			left: 640px;
+		}
 	}

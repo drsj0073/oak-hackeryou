@@ -10,8 +10,21 @@
 	&__title {
 	font-family: "raleway", sans-serif;
 	text-transform: uppercase;
-	font-size: 3rem;
+	font-size: 1rem;
 	letter-spacing: 8px;
+	
+		@mixin atSmall {
+			font-size: 1.5rem;
+		}
+
+		@mixin atMedium {
+			font-size: 2.5rem;
+		}
+
+		@mixin atLarge {
+			font-size: 3rem;
+		}
+
 	}
 
 		span {
@@ -23,9 +36,17 @@
 	&__subtitle {
 		font-family: "Raleway", sans-serif;
 		text-transform: uppercase;
-		font-size: 1.9rem;
+		font-size: 1rem;
 		font-weight: 300;
 		margin-top: 40px;
+
+			@mixin atSmall {
+				font-size: 1.5rem;
+			}
+			
+			@mixin atLarge {
+				font-size: 1.9rem;
+			}
 	}	
 
 	img {

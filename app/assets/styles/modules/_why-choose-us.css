@@ -1,21 +1,9 @@
-.oak-history {
-	display: flex;
-
-	&__content {
-		display: flex;
-	}
-
+.why-choose-us {
 	&__text-container {
-		 padding: 0 20px;
+		padding: 0 20px;
 
-		 @mixin atSmall {
+		@mixin atSmall {
 		 	padding: 0;
-		 }
-
-		 @mixin atLarge {
-		 	max-width: 550px;
-		 	margin-right: 150px;
-		 	margin-top: 70px;
 		 }
 	}
 
@@ -34,20 +22,10 @@
 	p {
 		line-height: 1.5;
 		margin: 0;
-		text-align: left;
 		font-size: .9rem;
 
 		@mixin atSmall {
 			font-size: 1rem;
 		}
-	}
-
-	&__image {
-		display: none;
-
-		@mixin atLarge {
-			display: block;
-		}
-	}
-
+	}	
 }

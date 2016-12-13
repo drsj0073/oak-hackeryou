@@ -1,0 +1,89 @@
+.site-footer  {
+	background-color: #f4f4f4;	
+
+	&__container {
+		
+		margin: 0px 100px;
+		text-align: center;
+
+		
+		@mixin atMedium {
+			display: flex;
+			justify-content: space-between;
+			margin: 0;
+		}
+	}
+
+
+
+	&__info {	
+		margin-bottom: 40px;
+
+		@mixin atMedium {
+			width: 30%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__social {
+		margin-bottom: 40px;
+
+		@mixin atMedium {
+			text-align: center;
+			width: 30%;
+			margin-bottom: 0;
+		}
+	}
+
+	&__contact {
+		
+		@mixin atMedium {
+			width: 30%;
+		}
+			
+		@mixin atLarge {
+			padding-left: 180px;
+		}
+	}
+
+ul {	
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	li {
+		margin-right: 20px;
+	}
+	li:last-child {
+		margin-right: 0;
+	}	
+
+	a {
+		color: #161616;
+	}
+
+	a:hover {
+		color: $mainGreen;
+	}
+
+}
+
+.copywrite {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	letter-spacing: 1px;
+}
+
+}
+
+h3 {
+	font-family: "ubuntu", sans-serif;
+	font-weight: 500;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+p {
+	letter-spacing: 1px;
+}

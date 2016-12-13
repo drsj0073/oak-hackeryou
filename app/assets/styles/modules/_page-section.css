@@ -1,7 +1,19 @@
 .page-section {
-	padding: 50px 0;
+	padding: 25px 0;
 
 	&--extra-t-padding {
 		padding-top: 100px;
+	}
+
+	&--small-b-padding {
+		padding-bottom: 20px;
+	}
+
+	@mixin atSmall {
+		padding: 35px 0;
+	}
+
+	@mixin atLarge {
+		padding: 50px 0;
 	}
 }
