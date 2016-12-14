@@ -85,6 +85,7 @@
 .gallery__image {
 	margin-bottom: 30px;
 	display: block;
+	position: relative;
 }
 
 .gallery__image:nth-last-child(-n+3) {
@@ -99,8 +100,28 @@
 	}
 }
 
-.gallery--overlay {
+.gallery__overlay {
+	position: relative;
 	background: $mainGreen;
 	height: 100%;
 	margin-bottom: 30px;
 }	
+
+.gallery__overlay-text {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #161616;
+	/*z-index: 1;*/
+}
+
+.gallery__overlay-heart {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #161616;
+	/*z-index: 1;*/
+}
+

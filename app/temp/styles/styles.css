@@ -958,6 +958,7 @@ ul {
 .gallery__image {
 	margin-bottom: 30px;
 	display: block;
+	position: relative;
 }
 
 .gallery__image:nth-last-child(-n+3) {
@@ -973,10 +974,29 @@ ul {
   }
 }
 
-.gallery--overlay {
+.gallery__overlay {
+	position: relative;
 	background: #7BEEC7;
 	height: 100%;
 	margin-bottom: 30px;
+}
+
+.gallery__overlay-text {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #161616;
+	/*z-index: 1;*/
+}
+
+.gallery__overlay-heart {
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: #161616;
+	/*z-index: 1;*/
 }
 
 .newsletter__content {
@@ -1060,7 +1080,7 @@ input[type="submit"] {
 
 input[type="email"] {
 	margin-bottom: 25px;
-	padding: 10px 25px 10px 10px;
+	padding: 10px 10px 10px 10px;
 	text-transform: uppercase;
 }
 
@@ -1156,6 +1176,7 @@ input[type="submit"]:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0;
+    text-align: left;
   }
 }
 
